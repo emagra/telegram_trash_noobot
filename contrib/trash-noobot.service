@@ -1,0 +1,16 @@
+[Unit]
+Description=Trash Noobot
+Requires=network.target local-fs.target
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=simple
+User=caccola
+Group=caccola
+WorkingDirectory=/home/caccola/workspace/trash_noobot/
+PIDFile=/var/run/noobot_trash.pid
+ExecStart=/home/caccola/workspace/trash_noobot/noobot_trash.py
+
+[Install]
+WantedBy=multi-user.target
