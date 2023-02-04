@@ -43,3 +43,4 @@ tmtagsHistory
 
 /venv
 /conf/conf.json
+/conf/chat*.json*
